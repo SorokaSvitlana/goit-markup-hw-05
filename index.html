@@ -26,7 +26,7 @@
           <span  class="logo-web">Web</span>Studio
         </a>
         <ul class="list-nav list">
-          <li>
+          <li class="list-item">
             <a class="item-nav current link" href="./index.html">Студія</a>
           </li>
           <li>
@@ -65,7 +65,7 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button class="hero-btn btn" type="button">Замовити послугу</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
 
@@ -128,14 +128,17 @@
         <div class="container about-container">
         <h2 class="about-title title">Чим ми займаємося</h2>
          <ul class="about-list list">
-          <li>
+          <li class="about-item">
             <img src="./images/box1.jpg" alt="написання коду" width="370" />
+            <p class="about-text">ДЕСКТОПНІ ДОДАТКИ</p>
           </li>
-          <li>
+          <li class="about-item">
             <img src="./images/box2.jpg" alt="телефон" width="370" />
+            <p class="about-text">МОБІЛЬНІ ДОДАТКИ</p>
           </li>
-          <li>
+          <li class="about-item">
             <img src="./images/box3.jpg" alt="дизайн" width="370" />
+            <p class="about-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
           </li>
         </ul>
       </div>
@@ -426,5 +429,15 @@
     </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button  class="modal-close" type="button" data-modal-close>
+        <svg class="modal-close-icon" width="11" height="11">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>  
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
